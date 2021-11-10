@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block body %}
+
+<header>
+    <h1>Hisseler</h1>
+    <p>Lütfen tahmin almak istediğiniz borsa kağıdını seçiniz</p>
+</header>
+
+<hr>
+
+<ul>
+
+<li>BitCoin</li>
+<a href="/tavsiye">
+<img src="{% static 'bitcoin.jpg' %}" alt="" width="100" height="100" >
+</a>
+
+
+<hr>
+
+<li>Ethereum</li>
+<p><img src="{% static 'ethereum.jpg' %}" alt="" width="100" height="100"></p>
+
+
+<hr>
+
+<li>Garanti Bankası</li>
+<p><img src="{% static 'garanti.jpg' %}" alt="" width="100" height="100"></p>
+
+
+<hr>
+
+</ul>
+
+{% endblock body %}
